@@ -1,0 +1,14 @@
+{
+  "name": "food-banks-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18",
+    "@tailwindcss/cli": "^4.1.18",
+    "postcss": "^8.4.30",
+    "autoprefixer": "^10.4.14"
+  }
+}
