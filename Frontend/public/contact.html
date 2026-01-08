@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/output.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <header class="fatherRestaurant sticky top-0">
+      <div
+        class="sonRestaurant flex flex-row justify-between text-center items-center px-8 md:px-10 lg:px-12 py-1 bg-green-900 text-white font-bold w-full"
+      >
+        <section
+          class="flex flex-row justify-between text-center items-center w-full lg:w-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center text-center gap-1 md:text-3xl lg:text-4xl"
+          >
+            <h1>
+              <i
+                class="fa-sharp fa-solid fa-utensils h-15 w-15 rounded-full border-2 border-amber-50 lg:rounded-ee-full bg-white text-green-600"
+              ></i>
+            </h1>
+            <h1 class="text-3xl lg:text-5xl md:text-5xl">
+              Food<span class="text-black">Bank</span>
+            </h1>
+          </div>
+
+          <div id="barIcon" class="block lg:hidden md:text-[50px] text-[30px]">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </div>
+        </section>
+
+        <section class="hidden lg:block">
+          <ul
+            class="flex flex-row justify-between text-1xl text-center items-center gap-6 px-10"
+          >
+            <li>
+              <a href="./index.html" class="hover:text-black hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:text-black hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./delicacies.html"
+                class="hover:text-black hover:underline"
+                >Delicacies</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-black hover:underline"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./testimonials.html"
+                class="hover:text-black hover:underline"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="hidden lg:block">
+          <ul
+            class="flex flex-row justify-between text-center items-center gap-6"
+          >
+            <a href="./login.html" class="hover:text-black hover:underline"
+              >Login</a
+            >
+            <a href="./signUp.html" class="hover:text-black hover:underline"
+              >Sign Up</a
+            >
+          </ul>
+        </section>
+      </div>
+
+      <!-- Responsive Navigation Bar -->
+      <div id="menu" class="lg:hidden">
+        <section
+          class="flex flex-col items-center text-center gap-10 w-full h-[60vh] p-10 bg-green-800 text-white text-2xl font-bold"
+        >
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              <a href="./delicacies.html">Delicacies</a>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+          </ul>
+
+          <ul class="flex flex-row items-center justify-center gap-6">
+            <a href="./signUp.html">Sign Up</a>
+          </ul>
+        </section>
+      </div>
+    </header>
+
+    <section
+      class="contactSection flex- flex-col justify-center w-[100%] h-auto gap-8 p-4 lg:p-12 md:p-10"
+    >
+      <div
+        class="contactSecSonDiv flex flex-col justify-center w-[100%] h-auto gap-10 items-center px-8 md:px-10 lg:px-12 py-10 bg-white rounded-2xl"
+      >
+        <section class="h1contDiv">
+          <h1 class="text-3xl lg:text-4xl md:text-5xl font-extrabold">
+            Contact Us
+          </h1>
+        </section>
+
+        <section
+          class="contDetailDiv flex flex-col w-[100%] h-auto items-center gap-6"
+        >
+          <div
+            class="contactRow flex flex-col justify-center lg:grid-cols-2 w-[100%] h-auto md:grid grid-cols-2 items-center md:px-10 gap-10 md:gap-24 lg:pl-[150px]"
+          >
+            <div
+              class="adDetails flex flex-col w-[100%] lg:w-[300px] md:w-[300px] h-[300px] lg:h-[330px] md:h-[350px] border-4 rounded-3xl border-green-300 bg-green-800 text-[13px] lg:text-[15px] md:text-[16px] p-3 pt-4 md:p-5 lg:p-5 text-white gap-4 lg:gap-3 md:gap-3"
+            >
+              <div class="location flex flex-row gap-3">
+                <div>
+                  <span
+                    ><i
+                      class="fa-sharp fa-solid fa-location-dot text-[15px] text-black p-2 text-center border-0 rounded-full bg-white"
+                    ></i
+                  ></span>
+                </div>
+
+                <div class="callDiv flex flex-col">
+                  <h3>Address</h3>
+                  <p>#18 Kandi Okeke Crescent Ifite,</p>
+                  <p>Awka Anambra, Nigeria</p>
+                </div>
+              </div>
+
+              <div class="callDiv flex flex-row gap-3">
+                <div>
+                  <span
+                    ><i
+                      class="fa-solid fa-phone text-[15px] text-black p-2 rounded-full bg-white"
+                    ></i
+                  ></span>
+                </div>
+
+                <ul class="">
+                  <h3>Call Us</h3>
+                  <li><a href="">+2348138743424</a></li>
+                  <li><a href="">+6713815924</a></li>
+                </ul>
+              </div>
+
+              <div class="email flex flex-row gap-3">
+                <div class="flex items-center text-center">
+                  <span
+                    ><i
+                      class="fa-solid fa-envelope text-[15px] text-black p-2 rounded-full bg-white"
+                    ></i
+                  ></span>
+                </div>
+
+                <div>
+                  <h3>Email</h3>
+                  <a href="">foodbankusa1@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="workhours flex flex-col items-start w-[100%] lg:w-[300px] md:w-[300px] h-[300px] lg:h-[330px] md:h-[350px] border-4 gap-4 border-gray-800 bg-black p-5 md:p-5 lg:p-5 rounded-3xl text-white text-[12px] lg:text-[15px] md:text-[18px]"
+            >
+              <h2 class="text-3xl">Store Hours</h2>
+
+              <ul
+                class="flex flex-col gap-1 text-[15px] lg:text-[15px] md:text-[18px]"
+              >
+                <li>Monday 8am - 11:30pm</li>
+                <li>Tuesday 8am - 11:30pm</li>
+                <li>Wednesday 8am - 11:30pm</li>
+                <li>Thursday 8am - 11:30pm</li>
+                <li>Friday 8am - 11:30pm</li>
+                <li>Saturday 9am - 11:30pm</li>
+                <li>Sunday 10am - 2am</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div
+            class="mesageSec flex flex-col md:grid grid-cols-2 lg:grid-cols-2 justify-between items-center text-center gap-8 pt-10 md:px-10 lg:px-16 lg:gap-8 py-6"
+          >
+            <div
+              class="flex flex-col justify-center items-center text-center lg:w-[80%] gap-5"
+            >
+              <h2 class="text-2xl lg:text-2xl md:text-3xl font-bold pt-4">
+                Send a Message
+              </h2>
+
+              <p
+                class="text-[18px] lg:text-[20px] md:text-[25px] md:p-5 lg:p-16"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae labore ea iure exercitationem assumenda enim
+                corporis id architecto rerum nihil?
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 w-[100%] lg:w-[80%] md:w-[100%] h-auto text-[15px] lg:text-[15px] md:text-[18px]"
+            >
+              <div class="w-[100%] border-2 border-gray-200">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Name"
+                  class="w-[100%] h-[50px] md:text-[25px] md:h-[70px] lg:text-[18px] lg:h-[50px] text-green-700 font-semibold outline-none pl-3"
+                />
+              </div>
+
+              <div class="w-[100%] border-2 border-gray-200">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  class="w-[100%] h-[50px] md:text-[25px] md:h-[70px] lg:text-[18px] lg:h-[50px] text-green-700 font-semibold outline-none pl-3"
+                />
+              </div>
+
+              <div class="w-[100%] border-2 border-gray-200">
+                <textarea
+                  name="Message"
+                  id="message"
+                  placeholder="Message"
+                  class="w-[100%] h-[200px] lg:text-[18px] md:text-[25px] text-green-700 font-semibold outline-none pl-3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center items-center text-center w-[100%] lg:w-[100%] md:w-[100%] bg-green-800 mt-6 px-10 py-2 md:px-15 md:py-5 lg:px-10 lg:py-2 hover:bg-green-500 hover:font-bold border-2 border-gray-200 rounded-2xl"
+          >
+            <a
+              href=""
+              class="text-2xl lg:text-2xl md:text-3xl text-white font-semibold hover:text-gray-800"
+              >Send</a
+            >
+          </div>
+        </section>
+        <section></section>
+      </div>
+    </section>
+    <br />
+
+    <!-- FOOTER STYLING -->
+    <footer
+      class="bg-black p-8 text-white relative w-full px-8 lg:px-12 md:px-10"
+    >
+      <div
+        class="footerSon flex flex-col gap-30 w-full justify-between md:grid grid-cols-2 lg:grid-cols-4"
+      >
+        <section
+          class="flex flex-row justify-start items-center text-center gap-1 md:text-3xl lg:text-4xl"
+        >
+          <h1>
+            <i
+              class="fa-sharp fa-solid fa-utensils h-15 w-15 rounded-full border-2 border-amber-50 lg:rounded-ee-full bg-white text-green-600"
+            ></i>
+          </h1>
+          <h1 class="font-extrabold">
+            Food<span class="text-green-950">Bank</span>
+          </h1>
+        </section>
+
+        <div class="second2 flex flex-col gap-8 lg:text-[16px] md:text-[25px]">
+          <h3>HEAD OFFICE, USA</h3>
+
+          <section class="local lg:text-[16px] md:text-[25px]">
+            <a class="underline hover:text-green-600" href=""
+              >foodbankusa1@gmail.com</a
+            >
+            <h5>+6713815924</h5>
+            <p>International Head Office,</p>
+            <p>204 Wiberforce Lane, Washington DC</p>
+          </section>
+
+          <a
+            class="underline hover:text-green-600 lg:text-[16px] md:text-[25px]"
+            href=""
+            >GOOGLE MAP <i class="ri-arrow-right-fill"></i
+          ></a>
+        </div>
+
+        <div class="second3 flex flex-col gap-8 lg:text-[16px] md:text-[25px]">
+          <h3>NIGERIA BRANCH</h3>
+
+          <section class="lg:text-[16px] md:text-[25px]">
+            <a class="underline hover:text-green-600" href=""
+              >sorochi1993@gmail.com</a
+            >
+            <h5>+2347017073985</h5>
+            <p>#18 Kandi Okeke Crescent Ifite,</p>
+            <p>Awka Anambra, Nigeria</p>
+          </section>
+
+          <a
+            class="underline hover:text-green-600 lg:text-[16px] md:text-[25px]"
+            href=""
+            >SEE ON MAP <i class="ri-arrow-right-fill"></i
+          ></a>
+        </div>
+
+        <div class="second4 flex flex-col gap-12 lg:text-[16px] md:text-[25px]">
+          <h3>WANT TO BE THE SMARTEST IN YOUR OFFICE?</h3>
+
+          <a
+            class="underline hover:text-green-600 lg:text-[16px] md:text-[25px]"
+            href=""
+            >SIGN UP FOR OUR NEWSLETTER <i class="ri-arrow-right-fill"></i
+          ></a>
+
+          <section class="flex flex-col gap-3 lg:text-[16px] md:text-[25px]">
+            <h5>FOLLOW US:</h5>
+
+            <div class="anchor flex flex-row justify-between font-bold">
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-google-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script>
+      const barIcon = document.getElementById("barIcon");
+      const menu = document.getElementById("menu");
+
+      // hamburgerIcon.addEventListener('click', ()=>{
+      //   menu.classList.toggle('hidden')
+      // });
+
+      barIcon.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
