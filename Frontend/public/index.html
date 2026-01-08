@@ -1,13 +1,613 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/output.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <header class="fatherRestaurant sticky top-0 z-50">
+      <div
+        class="sonRestaurant flex flex-row justify-between text-center items-center px-8 md:px-10 lg:px-12 py-1 bg-green-900 text-white font-bold w-full"
+      >
+        <section
+          class="flex flex-row justify-between text-center items-center w-full lg:w-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center text-center gap-1 md:text-3xl lg:text-4xl"
+          >
+            <h1>
+              <i
+                class="fa-sharp fa-solid fa-utensils h-15 w-15 rounded-full border-1 border-amber-50 lg:rounded-ee-full bg-white text-green-600 font-extrabold text-4xl items-center"
+              ></i>
+            </h1>
+            <h1 class="text-3xl lg:text-5xl md:text-5xl">
+              Food<span class="text-black">Bank</span>
+            </h1>
+          </div>
+
+          <div id="barIcon" class="block lg:hidden text-[30px] md:text-[50px]">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </div>
+        </section>
+
+        <section class="hidden lg:block">
+          <ul
+            class="flex flex-row justify-between text-1xl text-center items-center gap-6 px-10"
+          >
+            <li>
+              <a href="./index.html" class="hover:text-black hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:text-black hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./delicacies.html"
+                class="hover:text-black hover:underline"
+                >Delicacies</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-black hover:underline"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./testimonials.html"
+                class="hover:text-black hover:underline"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="hidden lg:block">
+          <ul
+            class="flex flex-row justify-between text-center items-center gap-6"
+          >
+            <a href="./login.html" class="hover:text-black hover:underline"
+              >Login</a
+            >
+            <a href="./signUp.html" class="hover:text-black hover:underline"
+              >Sign Up</a
+            >
+          </ul>
+        </section>
+      </div>
+
+      <!-- Responsive Navigation Bar -->
+      <div id="menu" class="lg:hidden">
+        <section
+          class="flex flex-col items-center text-center gap-10 w-full h-[60vh] p-10 bg-green-800 text-white text-2xl font-bold"
+        >
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              <a href="./delicacies.html">Delicacies</a>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+          </ul>
+
+          <ul class="flex flex-row items-center justify-center gap-6">
+            <a href="./login.html">Login</a>
+            <a href="./signUp.html">Sign Up</a>
+          </ul>
+        </section>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="">
+      <section
+        class="flex flex-col justify-center gap-3 lg:grid grid-cols-2 px-2 py-2 lg:py-2 lg:px-2 md:px-3 md:py-3 w-[100% text-[20px] lg:text-[17px] md:text-[23px]"
+      >
+        <div
+          class="text flex flex-col w-[100%] h-[auto] justify-center py-4 lg:py-4 md:py-8 rounded-2xl bg-white px-8 lg:px-12 md:px-10 pb-8 md:pb-10 lg:pb-5"
+        >
+          <div class="flex flex-col gap-2">
+            <h1
+              class="text-[35px] font-bold lg:pr-20 md:text-[48px] lg:text-[45px] leading-10 lg:leading-14 md:leading-16 md:tracking-normal md:pr-[360px] lg:tracking-normal"
+            >
+              A Reliable Food Vendor for you and yours.
+            </h1>
+
+            <p
+              class="pt-3 md:pr-10 lg:pr-0 md:text-[24px] lg:text-[15px] tracking-wider"
+            >
+              Foodbank provides reliable restaurant services for various
+              customer needs on and offline. We are pioneers in this service or
+              field, and the best among others.
+            </p>
+          </div>
+
+          <div
+            class="anchors flex flex-col justify-center md:justify-between lg:justify-between lg:grid-cols-2 md:grid grid-cols-2 md:gap-4 mt-10 gap-7 w-[100%] md:w-[80%] lg:w-[80%] whitespace-nowrap"
+          >
+            <a
+              href=""
+              class="flex flex-row items-center justify-around lg:justify-between py-1 px-4 lg:py-1 lg:px-4 md:py-4 md:px-4 bg-neutral-900 text-white font-semibold text-center text-[17px] lg:text-[15px] md:text-[22px] rounded-4xl lg:rounded-4xl md:rounded-full border-2 border-neutral-500"
+              >Get Started Now
+              <i
+                class="ri-arrow-right-circle-line text-[25px] md:text-[28px] lg:text-[25px]"
+              ></i>
+            </a>
+
+            <a
+              href=""
+              class="flex items-center justify-around py-2 px-4 lg:py-2 lg:px-3 md:py-4 md:px-3 bg-gray-300 rounded-4xl lg:rounded-4xl md:rounded-full font-semibold text-center text-[17px] lg:text-[15px] md:text-[22px] border-2 border-gray-400"
+              >View Live Demo</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col md:grid grid-cols-2 lg:grid-cols-2 mt-20 md:mt-32 lg:mt-32 w-[100%] md:w-[80%] h-[auto] justify-center items-center lg:items-start gap-5"
+          >
+            <div class="users flex flex-col gap-1 w-[100%]">
+              <h1
+                class="text-[34px] lg:text-[34px] md:text-[42px] font-semibold"
+              >
+                20+
+              </h1>
+              <h6 class="md:text-[24px] lg:text-[15px]">
+                International and domestic customers bank on Foodbank
+              </h6>
+            </div>
+
+            <div class="transactions flex flex-col gap-1 w-[100%]">
+              <h1
+                class="text-[34px] lg:text-[34px] md:text-[42px] font-semibold"
+              >
+                4k+
+              </h1>
+              <h6 class="md:text-[24px] lg:text-[15px]">
+                Daily deliveries from around the world
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="image bg-[url('../src/images/salad.jpg')] bg-cover bg-center text flex flex-col w-full h-full bg-no-repeat justify-center px-8 lg:px-12 md:px-10 py-2 rounded-2xl pb-8 md:pb-10 lg:pb-5"
+        >
+          <div
+            class="OrderValue flex flex-col justify-center w-[100%] h-[60vh] gap-5 mt-36"
+          >
+            <div
+              class="todayOrder flex flex-row justify-between w-[250px] md:w-[80%] lg:w-[60%] h-90px bg-white rounded py-4 px-2 gap-24 md:gap-[68%] lg:gap-42"
+            >
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-gray-700 text-[14px] lg:text-[14px] md:text-[21px] whitespace-nowrap"
+                >
+                  Today's orders
+                </h2>
+                <h1
+                  class="text-[23px] lg:text-[23px] md:text-[32px] font-semibold"
+                >
+                  12,891
+                </h1>
+              </div>
+
+              <div class="flex flex-col gap-6 md:gap-11 lg:gap-8">
+                <ul
+                  class="flex flex-col text-[19px] lg:text-[19px] md:text-[30px] font-extrabold"
+                >
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                </ul>
+
+                <h2
+                  class="green text-green-700 text-[17px] md:text-[21px] lg:text-[13px] font-semibold"
+                >
+                  <span class=""
+                    ><i
+                      class="fa-sharp fa-solid fa-arrow-down rotate-180"
+                    ></i></span
+                  >31%
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="aveOrder flex flex-row justify-between w-[250px] md:w-[80%] lg:w-[60%] h-90px bg-white rounded py-4 px-2 gap-20 md:gap-[64%] lg:gap-38"
+            >
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-gray-700 text-[14px] lg:text-[14px] md:text-[21px] whitespace-nowrap"
+                >
+                  Avg. orders value
+                </h2>
+                <h1
+                  class="text-[23px] lg:text-[23px] md:text-[32px] font-semibold"
+                >
+                  $431.876
+                </h1>
+              </div>
+
+              <div class="flex flex-col gap-6 md:gap-11 lg:gap-8">
+                <ul
+                  class="flex flex-col text-[19px] lg:text-[19px] md:text-[30px] font-extrabold"
+                >
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                  <li class="w-[130px] h-[4px] text-gray-700 font-bold">.</li>
+                </ul>
+
+                <h2
+                  class="red text-red-600 text-[17px] md:text-[21px] lg:text-[13px] font-semibold"
+                >
+                  <span><i class="fa-sharp fa-solid fa-arrow-down"></i></span
+                  >31%
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-0">
+            <div class="flex flex-row gap-2 lg:3 md:4 items-center">
+              <div
+                class="flex flex-row items-center justify-center w-[40px] lg:w-[40px] md:w-[70px] h-[40px] lg:h-[40px] md:h-[70px] p-3 rounded-full bg-white"
+              >
+                <span
+                  ><i
+                    class="fa-sharp fa-solid fa-diamond text-gray-500 text-[22px] lg:text-[19px] md:text-3xl"
+                  ></i
+                ></span>
+              </div>
+
+              <h2 class="text-white text-[17px] md:text-[29px] lg:text-[17px]">
+                Prompt and reliable Delivery
+              </h2>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="flex flex-row gap-3 mt-5">
+                <h2
+                  class="w-[60px] lg:w-[60px] md:w-[80px] h-[6px] lg:h-[6px] md:h-[8px] border-2 text-3xl lg:text-3xl md:text-4xl text-white bg-white rounded"
+                ></h2>
+                <h2
+                  class="w-[60px] lg:w-[60px] md:w-[80px] h-[6px] lg:h-[6px] md:h-[8px] border-2 text-3xl lg:text-3xl md:text-4xl text-white bg-white rounded"
+                ></h2>
+
+                <div
+                  class="flex flex-row w-[60px] lg:w-[60px] md:w-[80px] gap-0 relative"
+                >
+                  <h2
+                    class="w-[30px] lg:w-[30px] md:w-[40px] h-[6px] lg:h-[6px] md:h-[8px] border-2 text-3xl text-white bg-white rounded"
+                  ></h2>
+                  <span
+                    class="w-[30px] lg:w-[30px] md:w-[40px] h-[6px] lg:h-[6px] md:h-[8px] border-2 text-3xl text-gray-400 bg-gray-400 rounded-e-2xl absolute left-7 lg:left-7 md:left-9"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <div
+        class="heroSec flex flex-col justify- items-center text-center w-[100%] h-auto"
+      >
+        <div
+          class="flex flex-col justify- items-center text-center mt-24 px-8 md:px-10 lg:px-12 gap-6 mb-6"
+        >
+          <h1 class="text-2xl font-bold md:text-5xl lg:text-3xl">
+            Welcome to FOOD BANK your surest belleful plug
+          </h1>
+          <p class="text-2xl md:text-3xl lg:text-[20px] text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            voluptatum id. Autem esse quia atque voluptatem aliquid deleniti
+            corporis maxime odit nemo quod! Modi ut repellendus doloribus culpa
+            laborum repudiandae? it nisi debitis placeat tempore magnam, qui
+            aperiam nobis tempora aliquid dolorum molestias voluptatem quas
+            distinctio.
+          </p>
+        </div>
+
+        <section
+          class="howWework flex flex-col justify-center items-center text-center gap-8 px-8 lg:px-14 md:px-14 mt-14"
+        >
+          <h2 class="text-4xl font-bold mt-10">How It Works</h2>
+          <div
+            class="howWeWorkSecRow flex flex-col justify-between items-center text-center gap-10 lg:flex-row w-[100%]"
+          >
+            <div
+              class="boxDiv1 flex flex-col justify-center items-center gap-4 px-2 py-4 md:py-6 lg:py-4 w-[100%] h-auto border-2 border-white bg-white rounded-2xl md:w-3xl lg:w-[100%] hover:scale-110 transition-all duration-200"
+            >
+              <h3
+                class="py-1 px-2 text-white text-1xl border-2 bg-green-950 border-white rounded-3xl mr-[220px] lg:mr-[235px] md:mr-[600px] lg:text-[17px] md:text-2xl whitespace-nowrap"
+              >
+                Food Bank
+              </h3>
+              <img
+                src="./images/salad.jpg"
+                alt=""
+                class="w-[180px] h-[180px] rounded-full md:w-[320px] md:h-[320px] lg:w-[180px] lg:h-[180px]"
+              />
+
+              <div
+                class="flex flex-col justify-center items-center text-center gap-2 lg:gap-2 text-[20px] md:text-3xl lg:text-[16px]"
+              >
+                <h2 class="font-bold text-2xl md:text-3xl lg:text-2xl">
+                  Delivery or Pick Up
+                </h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dignissimos nisi ad quam, voluptates voluptatibus dolorem. Aut
+                  error culpa suscipit enim hic dicta assumenda magni provident?
+                  Quam tenetur soluta iure quibusdam.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="boxDiv2 flex flex-col justify-center items-center gap-4 px-2 py-4 md:py-6 lg:py-4 w-[full] h-auto border-2 border-white bg-white rounded-2xl md:w-3xl lg:w-[100%] hover:scale-110 transition-all duration-200"
+            >
+              <h3
+                class="py-1 px-2 text-white text-1xl border-2 bg-green-950 border-white rounded-3xl mr-[220px] lg:mr-[235px] md:mr-[600px] lg:text-[17px] md:text-2xl whitespace-nowrap"
+              >
+                Food Bank
+              </h3>
+              <img
+                src="./images/breakfast/rice_and_chicken-removebg-preview.png"
+                alt=""
+                class="w-[180px] h-[180px] rounded-full md:w-[320px] md:h-[320px] lg:w-[180px] lg:h-[180px]"
+              />
+
+              <div
+                class="flex flex-col justify-center items-center text-center gap-2 lg:gap-2 text-[20px] md:text-3xl lg:text-[16px]"
+              >
+                <h2 class="font-bold text-2xl md:text-3xl lg:text-2xl">
+                  Meal Plans
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  sunt voluptatum veniam ad? Vitae dolor aspernatur molestias
+                  libero omnis voluptatibus veniam itaque facilis, asperiores
+                  architecto quae necessitatibus culpa explicabo consequatur.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="boxDiv3 flex flex-col justify-center items-center gap-4 px-2 py-4 md:py-6 lg:py-4 w-[100%] h-auto border-2 border-white bg-white rounded-2xl md:w-3xl lg:w-[100%] hover:scale-110 transition-all duration-200"
+            >
+              <h3
+                class="py-1 px-2 text-white text-1xl border-2 bg-green-950 border-white rounded-3xl mr-[220px] lg:mr-[235px] md:mr-[600px] lg:text-[17px] md:text-2xl whitespace-nowrap"
+              >
+                Food Bank
+              </h3>
+              <img
+                src="./images/breakfast/pexels-ash-craig-122861-376464-removebg-preview.png"
+                alt=""
+                class="w-[180px] h-[180px] rounded-full md:w-[320px] md:h-[320px] lg:w-[180px] lg:h-[180px]"
+              />
+
+              <div
+                class="flex flex-col justify-center items-center text-center gap-2 lg:gap-2 text-[20px] md:text-3xl lg:text-[16px]"
+              >
+                <h2 class="font-bold text-2xl md:text-3xl lg:text-2xl">
+                  Pack N Go
+                </h2>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora temporibus aspernatur, consequatur provident quos odit
+                  autem similique, facere distinctio, commodi cumque iusto
+                  possimus doloremque sequi ullam amet debitis unde atque?
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          class="flex flex-row items-center text-center gap-1 font-bold mt-14"
+        >
+          <a
+            href="./delicacies.html"
+            class="py-4 px-6 bg-green-950 border-2 border-gray-400 text-white"
+            >Get Our Menu</a
+          >
+          <a
+            href="./signUp.html"
+            class="py-4 px-6 border-2 border-gray-400 bg-gray-200 text-green-950"
+            >Join Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STATS -->
+    <section>
+      <div
+        class="flex flex-col justify-between items-center text-center gap-8 px-8 md:px-10 lg:px-12 h-auto w-full mt-40"
+      >
+        <div
+          class="flex flex-col justify-between items-center text-center gap-6"
+        >
+          <h1 class="text-2xl font-bold md:text-5xl lg:text-3xl">
+            See Our Statistics
+          </h1>
+          <p class="text-2xl md:text-3xl lg:text-[20px] text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            natus amet laudantium maxime voluptates, dolor, quidem dolores id,
+            dolorum sed dicta. Mollitia dolorum pariatur culpa similique
+            nostrum. Consequuntur, cum obcaecati.
+          </p>
+        </div>
+
+        <div
+          class="statcol flex flex-col justify-between items-center text-center gap-6 lg:gap-6 h-auto w-full lg:grid-cols-4 md:grid grid-cols-2 text-2xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-4 w-[320px] md:w-[380px] lg:w-[280px] h-auto border-2 border-gray-100 p-4 rounded-2xl bg-white"
+          >
+            <h2>
+              <i class="fa-sharp fa-solid fa-utensils text-green-800"></i>
+            </h2>
+            <h2 class="font-extrabold">99%</h2>
+            <h2 class="font-semibold">Dishes</h2>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-4 w-[320px] md:w-[380px] lg:w-[280px] h-auto border-2 border-gray-100 p-4 rounded-2xl bg-white"
+          >
+            <h2>
+              <i class="fa-sharp fa-solid fa-user-plus text-green-800"></i>
+            </h2>
+            <h2 class="font-extrabold">4.2k</h2>
+            <h2 class="font-semibold">Daily Customers</h2>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-4 w-[320px] md:w-[380px] lg:w-[280px] h-auto border-2 border-gray-100 p-4 rounded-2xl bg-white"
+          >
+            <h2><i class="fa-sharp fa-solid fa-users text-green-800"></i></h2>
+            <h2 class="font-extrabold">789</h2>
+            <h2 class="font-semibold">Employees</h2>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center text-center gap-4 md:gap-6 lg:gap-4 w-[320px] md:w-[380px] lg:w-[280px] h-auto border-2 border-gray-100 p-4 rounded-2xl bg-white"
+          >
+            <h2><i class="fa-sharp fa-solid fa-house text-green-800"></i></h2>
+            <h2 class="font-extrabold">15</h2>
+            <h2 class="font-semibold">Branches</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- FOOTER STYLING -->
+    <footer
+      class="bg-black opacity-85 p-8 text-white relative w-full px-8 lg:px-12 md:px-10"
+    >
+      <div
+        class="footerSon flex flex-col gap-30 w-full justify-between md:grid grid-cols-2 lg:grid-cols-4"
+      >
+        <section
+          class="flex flex-row justify-start items-center text-center gap-1 md:text-3xl lg:text-4xl"
+        >
+          <h1>
+            <i
+              class="fa-sharp fa-solid fa-utensils h-15 w-15 rounded-full border-2 border-amber-50 lg:rounded-ee-full bg-white text-green-600 text-4xl"
+            ></i>
+          </h1>
+          <h1 class="font-extrabold">
+            Food<span class="text-green-950">Bank</span>
+          </h1>
+        </section>
+
+        <div class="second2 flex flex-col gap-8">
+          <h3>HEAD OFFICE, USA</h3>
+
+          <section class="local">
+            <a
+              class="underline hover:text-green-600"
+              href="http://www.gmail.com"
+              >foodbankusa1@gmail.com</a
+            >
+            <h5>+6713815924</h5>
+            <p>International Head Office,</p>
+            <p>204 Wiberforce Lane, Washington DC</p>
+          </section>
+
+          <a
+            class="underline hover:text-green-600"
+            href="http://www.googlemap.com"
+            >GOOGLE MAP <i class="ri-arrow-right-fill"></i
+          ></a>
+        </div>
+
+        <div class="second3 flex flex-col gap-8">
+          <h3>NIGERIA BRANCH</h3>
+
+          <section class="">
+            <a class="underline hover:text-green-600" href=""
+              >sorochi1993@gmail.com</a
+            >
+            <h5>+2347017073985</h5>
+            <p>#18 Kandi Okeke Crescent Ifite,</p>
+            <p>Awka Anambra, Nigeria</p>
+          </section>
+
+          <a class="underline hover:text-green-600" href=""
+            >SEE ON MAP <i class="ri-arrow-right-fill"></i
+          ></a>
+        </div>
+
+        <div class="second4 flex flex-col gap-12">
+          <h3>WANT TO BE THE SMARTEST IN YOUR OFFICE?</h3>
+
+          <a class="underline hover:text-green-600" href=""
+            >SIGN UP FOR OUR NEWSLETTER <i class="ri-arrow-right-fill"></i
+          ></a>
+
+          <section class="flex flex-col gap-3">
+            <h5>FOLLOW US:</h5>
+
+            <div class="anchor flex flex-row justify-between font-bold">
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-google-line"></i
+              ></a>
+              <a class="hover:text-green-600" href="https://www.facebook.com"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script>
+      const barIcon = document.getElementById("barIcon");
+      const menu = document.getElementById("menu");
+
+      // hamburgerIcon.addEventListener('click', ()=>{
+      //   menu.classList.toggle('hidden')
+      // });
+
+      barIcon.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
