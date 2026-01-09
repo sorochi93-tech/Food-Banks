@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="/output.css" rel="stylesheet" /> -->
     <link href="../public/output.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -114,53 +120,113 @@
       </div>
     </header>
 
-    <!-- ABOUT US PAGE STYLING -->
-    <main class="aboutFather">
+    <section class="loginSec flex flex-col justify-center items-center py-4">
       <div
-        class="aboutSon flex flex-col justify-between text-center items-center w-[100%] h-auto px-8 md:px-10 lg:px-12 py-6 bg-black opacity-80"
+        class="loginSonDiv bg-white py-8 rounded flex flex-col justify-evenly w-[330px] md:w-[650px] lg:w-[400px] h-[100vh] border-0 border-black font-sans px-4 md:px-10 lg:px-8"
       >
-        <!-- DISPLAY BACKGROUND STYLING -->
-        <section class="flex flex-col w-[100%] h-auto">
-          <div
-            class="flex flex-col lg:grid-cols-2 md:grid grid-cols-2 justify-between items-center text-center gap-10 w-[100%] h-screen md:h-[500px]"
-          >
-            <div
-              class="flex flex-col justify-center w-[100%] text-2xl lg:text-2xl md:text-3xl text-white gap-4 pt-7 md:hover:font-semibold"
+        <div
+          class="flex flex-col justify-center items-center text-center px-8 md:px-10 lg:px-8"
+        >
+          <div class="flex flex-col justify-center text-center">
+            <h1
+              class="text-3xl md:text-5xl lg:text-3xl text-green-900 font-extrabold"
             >
-              <h1
-                class="font-bold italic font-sans text-4xl text-green-700 hover:text-white"
-              >
-                We Are Food Bank
-              </h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur corrupti commodi ipsam cum animi. Natus, quas sint?
-                Non.
-              </p>
-
-              <div class="anchor flex flex-row justify-center">
-                <a
-                  href=""
-                  class="p-4 border-2 border-white bg-green-800 text-white w-[200px] items-center hover:font-semibold hover:bg-green-950"
-                  >Read More</a
-                >
-              </div>
-            </div>
+              Log In
+            </h1>
 
             <div
-              class="w-full h-87.5 hover:scale-110 transition-all duration-300"
+              class="socials flex flex-row justify-center items-center text-center md:text-2xl lg:text-[15px] gap-1 md:mt-1"
             >
-              <img
-                src="./images/dinner/rice_and_kitchen-removebg-preview.png"
-                alt=""
-              />
+              <a class="hover:text-green-600" href="https://m.facebook.com"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+              <a class="hover:text-green-600" href=""
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a class="hover:text-green-600" href="https://www.linkedin.com"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
             </div>
           </div>
-        </section>
 
-        <section></section>
+          <h2
+            class="text-2xl md:text-3xl lg:text-2xl whitespace-nowrap font-bold"
+          >
+            Or use your Email
+          </h2>
+        </div>
+
+        <section>
+          <form
+            action=""
+            class="flex flex-col gap-4 md:gap-6 lg:gap-4 lg:text-[17px] md:text-3xl"
+          >
+            <div class="flex flex-col justify-start gap-1">
+              <label for="email" id="email" class="email font-bold"
+                >Email:</label
+              >
+              <input
+                type="text"
+                name="email"
+                class="email border-2 border-gray-200 w-[100%] h-[40px] lg:h-[40px] md:h-[70px] rounded-[8px] pl-3 text-[17px] lg:text-[17px] md:text-[25px] text-green-800"
+                placeholder="enter email"
+              />
+            </div>
+
+            <div class="flex flex-col justify-start gap-1">
+              <label for="email" id="email" class="email font-bold"
+                >Password:</label
+              >
+              <input
+                type="text"
+                name="password"
+                class="email border-2 border-gray-200 w-[100%] h-[40px] lg:h-[40px] md:h-[70px] rounded-[8px] pl-3 text-[17px] lg:text-[17px] md:text-[25px] text-green-800"
+                placeholder="enter password"
+              />
+            </div>
+
+            <div
+              class="flex flex-row justify-between gap-2 whitespace-nowrap font-bold"
+            >
+              <div class="flex mt-[20px] lg:mt-[20px] md:mt-[30px] gap-1">
+                <input
+                  class="lg:-[17px] md:text-3xl font-bold"
+                  type="checkbox"
+                  required
+                />
+                <label for="">Remember Me</label>
+              </div>
+
+              <a href="">Forgot Password?</a>
+            </div>
+
+            <div
+              class="w-[100%] text-center bg-green-900 border-2 border-green-50 py-3 lg:py-3 md:py-5 hover:bg-green-700 rounded-[10px] mt-3 md:mt-5 lg:mt-3 mb-3 md:mb-5 lg:mb-3"
+            >
+              <a href="./index.html" class="text-white font-bold">Log In</a>
+            </div>
+
+            <div>
+              <h3 class="font-medium">
+                Don't have an account?
+                <a
+                  href="./signUp.html"
+                  class="text-green-700 font-medium hover:font-bold"
+                  >Sign Up</a
+                >
+              </h3>
+            </div>
+
+            <div
+              class="flex justify-between text-center font-bold whitespace-nowrap gap-3 mt-2"
+            >
+              <a href="" class="hover:text-green-900">Privacy Policy</a>
+              <a href="" class="hover:text-green-900">Terms and Conditions</a>
+            </div>
+          </form>
+        </section>
       </div>
-    </main>
+    </section>
 
     <!-- Java Script -->
     <script>
