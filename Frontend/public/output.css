@@ -217,6 +217,9 @@
   .left-7 {
     left: calc(var(--spacing) * 7);
   }
+  .z-40 {
+    z-index: 40;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -255,6 +258,9 @@
   }
   .mr-\[220px\] {
     margin-right: 220px;
+  }
+  .mr-\[230px\] {
+    margin-right: 230px;
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
