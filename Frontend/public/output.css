@@ -291,17 +291,11 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
-  }
-  .h-87 {
-    height: calc(var(--spacing) * 87);
   }
   .h-87\.5 {
     height: calc(var(--spacing) * 87.5);
@@ -399,17 +393,11 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .rotate-90 {
     rotate: 90deg;
   }
   .rotate-180 {
     rotate: 180deg;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -511,10 +499,6 @@
     border-start-end-radius: var(--radius-2xl);
     border-end-end-radius: var(--radius-2xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
@@ -594,14 +578,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\/src\/images\/salad\.jpg\'\)\] {
-    background-image: url('../src/images/salad.jpg');
-  }
   .bg-\[url\(\'\/images\/salad\.jpg\'\)\] {
     background-image: url('/images/salad.jpg');
-  }
-  .bg-\[url\(\'\/src\/images\/salad\.jpg\'\)\] {
-    background-image: url('/src/images/salad.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -836,10 +814,6 @@
   }
   .opacity-85 {
     opacity: 85%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -1829,11 +1803,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1869,7 +1838,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
