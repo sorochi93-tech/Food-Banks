@@ -597,6 +597,9 @@
   .bg-\[url\(\'\.\.\/src\/images\/salad\.jpg\'\)\] {
     background-image: url('../src/images/salad.jpg');
   }
+  .bg-\[url\(\'\/images\/salad\.jpg\'\)\] {
+    background-image: url('/images/salad.jpg');
+  }
   .bg-\[url\(\'\/src\/images\/salad\.jpg\'\)\] {
     background-image: url('/src/images/salad.jpg');
   }
